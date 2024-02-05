@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504" prefWidth="448" styleClass="">
+  <children>
+    <Panel backgroundColor="#ffe6b3" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="60" layoutY="30" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="400" prefWidth="322" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="0" layoutY="10" prefHeight="20" prefWidth="320" styleClass="label " text="Добавить новую книгу" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <com.jfoenix.controls.JFXTextField alignment="CENTER_LEFT" editable="true" focusColor="#4059a9" focusTraversable="true" id="editName" layoutX="90" layoutY="100" prefColumnCount="12" prefHeight="30" prefWidth="260" promptText="" text="" unFocusColor="#4d4d4d">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="text-input"/>
+        <String fx:value="text-field"/>
+        <String fx:value="jfx-text-field"/>
+      </styleClass>
+    </com.jfoenix.controls.JFXTextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-editName" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="90" layoutY="80" prefHeight="20" prefWidth="100" styleClass="label " text="Название книги:" textAlignment="LEFT" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+    <com.jfoenix.controls.JFXTextField alignment="CENTER_LEFT" editable="true" focusColor="#4059a9" focusTraversable="true" id="editAuthor" layoutX="90" layoutY="160" prefColumnCount="12" prefHeight="30" prefWidth="260" promptText="" text="" unFocusColor="#4d4d4d">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="text-input"/>
+        <String fx:value="text-field"/>
+        <String fx:value="jfx-text-field"/>
+      </styleClass>
+    </com.jfoenix.controls.JFXTextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-editAuthor" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="90" layoutY="140" prefHeight="20" prefWidth="100" styleClass="label " text="Автор книги:" textAlignment="LEFT" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="90" layoutY="200" prefHeight="20" prefWidth="260" styleClass="label " text="Краткое описание:" textAlignment="LEFT" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
+    <org.develnext.jphp.ext.javafx.jfoenix.support.JFXTextAreaFixed editable="true" focusColor="#4059a9" focusTraversable="true" id="textAreaDesc" layoutX="90" layoutY="230" prefColumnCount="40" prefHeight="120" prefWidth="260" promptText="" text="" unFocusColor="#4d4d4d" wrapText="true">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="text-input"/>
+        <String fx:value="text-area"/>
+        <String fx:value="jfx-text-area"/>
+      </styleClass>
+    </org.develnext.jphp.ext.javafx.jfoenix.support.JFXTextAreaFixed>
+    <Data cursor="DEFAULT" enabled="1" id="data-textAreaDesc" visible="1"/>
+    <com.jfoenix.controls.JFXComboBox editable="false" focusColor="#4059a9" focusTraversable="true" id="comboboxGenre" labelFloat="" layoutX="90" layoutY="380" prefHeight="25" prefWidth="120" promptText="Жанр" unFocusColor="#4d4d4d" value="" visibleRowCount="10">
+      <items xmlns:fx="http://javafx.com/fxml">
+        <FXCollections fx:factory="observableArrayList"/>
+      </items>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="combo-box-base"/>
+        <String fx:value="combo-box"/>
+        <String fx:value="jfx-combo-box"/>
+      </styleClass>
+    </com.jfoenix.controls.JFXComboBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-comboboxGenre" visible="1"/>
+    <com.jfoenix.controls.JFXTextField alignment="CENTER_LEFT" editable="true" focusColor="#4059a9" focusTraversable="true" id="editGenre" layoutX="90" layoutY="300" prefColumnCount="12" prefHeight="25" prefWidth="120" promptText="" text="" unFocusColor="#4d4d4d">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="text-input"/>
+        <String fx:value="text-field"/>
+        <String fx:value="jfx-text-field"/>
+      </styleClass>
+    </com.jfoenix.controls.JFXTextField>
+    <Data cursor="DEFAULT" enabled="" id="data-editGenre" visible=""/>
+    <FlatButton alignment="CENTER" color="#ffb366" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ffcc80" id="button" layoutX="230" layoutY="380" prefHeight="30" prefWidth="120" styleClass="x-flat-button " text="Добавить книгу" textAlignment="CENTER" textFill="#1a1a1a" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-button" visible="1"/>
+    <FlatButton alignment="CENTER" color="#ffb366" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ffb366" id="buttonAlt" layoutX="340" layoutY="30" prefHeight="30" prefWidth="30" styleClass="x-flat-button " text="x" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-buttonAlt" visible="1"/>
+    <com.jfoenix.controls.JFXColorPicker focusTraversable="true" id="colorPicker44" layoutX="100" layoutY="20" prefHeight="40" prefWidth="20" style="&#10;&#10;-fx-border-radius: 0;&#10;">
+      <value>
+        <Color blue="1" green="0.60000002384186" opacity="1" red="0.50196081399918"/>
+      </value>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="combo-box-base"/>
+        <String fx:value="color-picker"/>
+        <String fx:value="jfx-color-picker"/>
+      </styleClass>
+    </com.jfoenix.controls.JFXColorPicker>
+    <Data cursor="DEFAULT" enabled="1" id="data-colorPicker44" visible="1"/>
+    <Data cursor="DEFAULT" enabled="" id="data-labelAlt" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#8099ff" focusTraversable="false" height="42" id="rect" layoutX="69" layoutY="19" stroke="#1a1a1a" strokeType="INSIDE" strokeWidth="0" style="-fx-border-radius:0;" styleClass="" width="22"/>
+    <Data cursor="HAND" enabled="" id="data-rect" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="130" layoutY="80" prefHeight="20" prefWidth="100" rotate="90" styleClass="label " text="Цвет" textAlignment="LEFT" textFill="#f2f2f2" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <FlatButton alignment="CENTER" color="#ffe6b3" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ffe6b3" id="button3" layoutX="190" layoutY="380" prefHeight="25" prefWidth="23" styleClass="x-flat-button " text="x" textAlignment="CENTER" textFill="#1a1a1a" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="" id="data-button3" visible=""/>
+  </children>
+</AnchorPane>

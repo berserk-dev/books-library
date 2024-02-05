@@ -1,0 +1,21 @@
+{
+  "props": [],
+  "components": {
+    "database": {
+      "type": "bundle\\sql\\MysqlClient",
+      "x": 32,
+      "y": 32,
+      "props": {
+        "autoOpen": true,
+        "catchErrors": "1",
+        "autoCommit": "1",
+        "transactionIsolation": 8,
+        "host": "srv753.hstgr.io",
+        "port": "3306",
+        "database": "u624995363_bookbase",
+        "username": "u624995363_bookname",
+        "password": "q123321123321.QQQ"
+      }
+    }
+  }
+}

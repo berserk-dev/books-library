@@ -1,0 +1,30 @@
+/* JavaFX CSS Style with -fx- prefix */
+.combo-box .list-cell:hover{
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #fff;
+}
+
+.combo-box .list-cell{
+    -fx-background-color: #e6e6cc; 
+}
+
+.combo-box .list-view{
+    -fx-background-color: #1a1a1a;
+}
+
+.combo-box .scroll-bar{
+    -fx-background-color: #1a1a1a;
+}
+
+.combo-box .scroll-bar .thumb{
+    -fx-background-color: #e6e6cc;
+}
+
+.scroll-pane .scroll-bar{
+    -fx-background-color: #1a1a1a;
+}
+
+.scroll-pane .scroll-bar .thumb{
+    -fx-background-color: #e6e6cc;
+    
+}
